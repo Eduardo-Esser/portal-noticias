@@ -9,7 +9,7 @@ section > header {
     text-align: center;
 }
 
-section > header h3 {
+article h3 {
     color: #173b82;
     margin-top: 35px;
     margin-bottom: 35px;
@@ -42,6 +42,17 @@ img {
     text-align: center;
 }
 
+article {
+    background-color: #fff;
+    margin-bottom: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204,204);
+    border-radius: 10px;
+    border-image: none;
+    padding: 25px;
+}
+
 article img {
     width: 100%;
     margin: 15px 0;
@@ -70,4 +81,3 @@ article footer {
     margin-top: 20px;
     padding-top: 10px;
 }
-
