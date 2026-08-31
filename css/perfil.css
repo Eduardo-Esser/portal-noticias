@@ -59,3 +59,101 @@
     padding-top: 1rem;
 }
 
+.curso-perfil {
+    margin-top: .25rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.local-perfil {
+    margin-top: .25rem;
+    color: #666;
+    font-size: .9rem;
+}
+
+/*Bagdes de tecnologias e interesses (span)*/
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: .75rem;
+    list-style: none;
+}
+
+.badges span {
+    display: inline-block;
+    padding: .25rem .25rem;
+    border-radius: 999px;
+    background-color: #e7edf9;
+    color: #173b82;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+/*Blocos de conteudo em duas colunas, com flex-wrap*/
+
+.conteudo-perfil {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.coluna-lateral {
+    flex:  1 1 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/*Cartôes de conteúdo, no mesmo estilo do cartao-hobby*/
+
+.cartao-perfil {
+    padding: 1.5rem;
+    border: 1pc solid #d8d8d8;
+    border-radius: .75rem;
+    background-color: #fff;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cartao-perfil h2 {
+    margin-bottom: .75rem;
+    padding-bottom: .5rem;
+    border-radius: 1px solid #eee;
+    font-size: 1.25rem;
+    color: #173b82;
+}
+
+.cartao-perfil p {
+    line-height: 1.6;
+}
+
+.capa-perfil p + p {
+    margin-top: .5rem;
+}
+
+.item_formacao {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee ;
+}
+
+.item-formacao:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.icone-formcao {
+    flex: 0 0 auto;
+    width: 75px;
+    height: auto;
+    object-fit: contain;
+    border-radius: .5rem;
+    background-color: #fff;
+    padding: .5rem;
+}
