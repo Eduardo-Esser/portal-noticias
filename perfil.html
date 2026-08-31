@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/perfil.css">
 </head>
 <body>
-    <!-- <h1>Perfil</h1>
-    <h1>Minhas Informações, como redes sociais, trabalho.</h1> -->
-
     <header>
         <h1>Meu Portal de Noticias</h1>
         <p>Programação, Experiências e Cotidianos</p>   
@@ -21,6 +20,122 @@
             </ul>
         </nav>
     </header>
+
+    <!--Inicio do conteudo perfil-->
+    <!--Responsavel por centralizar o conteudo no centro tela-->
+    <main class="container perfil">
+
+        <!--Imagem de capa-->
+        <figure class="capa-perfil">
+            <img src="./img/perfil/capa.png"
+            alt="Imagem de capa do perfil"
+            >
+        </figure>
+
+        <!--Foto de perfil e informações pessoais organizadas com Flexbox-->
+        <section class="cabecalho-perfil">
+
+            <figure class="foto-perfil">
+                <img src="./img/perfil/perfil.jpeg"
+                alt="Fotografia de perfil de Nome do Estudante"
+                >
+            </figure>
+
+            <div class="informacoes-perfil">
+                <h2>Eduardo Esser</h2>
+                <p class="curso-perfil">Redes de Computadores / Desenvolvimento Web</p>
+                <p class="local-perfil">Joinville, Santa Catarina</p>
+
+                <div class="badges">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Redes</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Blocos de conteudo organizados em duas colunas com Flexbox-->
+        <div class="conteudo-perfil">
+
+            <div class="coluna-principal">
+
+                <section class="cartao-perfil sobre-mim">
+                    <h2>Sobre mim</h2>
+                    <p>
+                        Sou estudante do curso técnico integrado em Redes de
+                        Computadores e estou desenvolvendo este portal como
+                        parte da disciplina de Desenvolvimento Web I. Gosto de
+                        entender como as coisas funcionam por trás das telas,
+                        seja em uma rede de computadores ou em uma página web.
+                    </p>
+                    <p>
+                        Neste espaço registro um pouco da minha trajetória,
+                        das tecnologias que venho estudando e dos meus
+                        interesses pessoais.
+                    </p>
+                </section>
+
+                <section class="cartao-perfil formacao-perfil">
+                    <h2>Formação e trajetória</h2>
+
+                    <article class="item-formacao">
+                        <img src="./img/perfil/ifc.png" alt="Icone do Instituto Federal"
+                        class="icone-formacao"
+                        >
+                        <div class="texto-formacao">
+                            <h3>Técnologo em Redes de Computadores</h3>
+                            <p>IFC - Campus Araquari</p>
+                            <p class="periodo-formacao">
+                                <time datetime="2024">2025</time> — atual
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="item-formacao">
+                        <img src="./img/perfil/web.png" alt="Icone da disciplina de Dev Wev I" 
+                        class="icone-formacao"
+                        >
+                        <div>
+                            <h3>Projeto: Portal de Notícias</h3>
+                            <p>Desenvolvimento Web I</p>
+                            <p class="periodo-formacao">
+                                <time datetime="2026">2026</time>
+                            </p>
+                        </div>
+                    </article>
+                </section>
+
+            </div>
+
+            <aside class="coluna-lateral">
+
+                <section class="cartao-perfil competencias-perfil">
+                    <h2>Competências</h2>
+                    <div class="badges">
+                        <span>Git</span>
+                        <span>Linux</span>
+                        <span>CSS</span>
+                        <span>HTML</span>
+                        <span>Redes</span>
+                    </div>
+                </section>
+
+                <section class="cartao-perfil interesses-perfil">
+                    <h2>Interesses</h2>
+                    <ul>
+                        <li>Analistas de Sistemas</li>
+                        <li>Desenvolvimento web</li>
+                        <li>Infraestrutura de Rede</li>
+                    </ul>
+                </section>
+
+            </aside>
+
+        </div>
+
+    </main>
+    <!--Final do conteudo perfil-->
 
     <footer>
 
