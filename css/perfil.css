@@ -59,6 +59,11 @@
     padding-top: 1rem;
 }
 
+.informacoes-perfil h2 {
+    font-size: 1.6rem;
+    color: #173b82;
+}
+
 .curso-perfil {
     margin-top: .25rem;
     font-size: 1.1rem;
@@ -100,8 +105,15 @@
     margin-top: 1.5rem;
 }
 
+.coluna-principal {
+    flex: 3 1 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .coluna-lateral {
-    flex:  1 1 240px;
+    flex: 1 1 240px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -111,7 +123,7 @@
 
 .cartao-perfil {
     padding: 1.5rem;
-    border: 1pc solid #d8d8d8;
+    border: 1px solid #d8d8d8;
     border-radius: .75rem;
     background-color: #fff;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
@@ -120,7 +132,7 @@
 .cartao-perfil h2 {
     margin-bottom: .75rem;
     padding-bottom: .5rem;
-    border-radius: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     font-size: 1.25rem;
     color: #173b82;
 }
@@ -133,7 +145,7 @@
     margin-top: .5rem;
 }
 
-.item_formacao {
+.item-formacao {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
@@ -148,12 +160,48 @@
     border-bottom: none;
 }
 
-.icone-formcao {
+.icone-formacao {
     flex: 0 0 auto;
     width: 75px;
-    height: auto;
+    height: 75px;
     object-fit: contain;
     border-radius: .5rem;
     background-color: #fff;
     padding: .5rem;
+}
+
+.texto_formacao {
+    flex: 1 1 auto;
+    margin-top: 0rem;
+}
+
+.item-formacao h3 {
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.periodo-formacao {
+    margin-top: .25rem;
+    color: #666;
+    font-size: .85rem;
+}
+
+/*Interesses*/
+
+.interesses-perfil ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.interesses-perfil li {
+    padding-left: 1rem;
+    position: relative;
+}
+
+.interesses-perfil li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #173b82;
 }
